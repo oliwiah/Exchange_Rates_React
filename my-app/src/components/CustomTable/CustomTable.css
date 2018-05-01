@@ -1,0 +1,85 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+table {
+    width: 100%;
+}
+
+.tableTitle {
+    font-size: 18px;
+    text-align: center;
+    margin-bottom: 5px;
+    margin-top: 20px;
+}
+
+table th {
+    border: 1px solid white;
+    background-color: #4e545a;
+    color: white;
+    font-weight: 500;
+}
+
+table .dateCell {
+    width: auto;
+}
+
+table .table-data {
+    border: 1px solid lightgray;
+}
+
+table .table-cell {
+    border: 1px solid lightgray;
+}
+
+@-webkit-keyframes pulse {
+    50% {
+        background: #4e545a;
+    }
+}
+@keyframes pulse {
+    50% {
+        background: #4e545a;
+    }
+}
+
+.loadingBackground {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background: #ffffff;
+}
+
+.loading-pulse {
+    position: relative;
+    width: 6px;
+    height: 24px;
+    background: rgba(255, 255, 255, 0.82);
+    -webkit-animation: pulse 750ms infinite;
+    animation: pulse 750ms infinite;
+    -webkit-animation-delay: 250ms;
+    animation-delay: 250ms;
+    margin-top: 10px;
+}
+.loading-pulse:before, .loading-pulse:after {
+    content: '';
+    position: absolute;
+    display: block;
+    height: 16px;
+    width: 6px;
+    background: rgba(255, 255, 255, 0.2);
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%);
+    -webkit-animation: pulse 750ms infinite;
+    animation: pulse 750ms infinite;
+}
+.loading-pulse:before {
+    left: -12px;
+}
+.loading-pulse:after {
+    left: 12px;
+    -webkit-animation-delay: 500ms;
+    animation-delay: 500ms;
+}

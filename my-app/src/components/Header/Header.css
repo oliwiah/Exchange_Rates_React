@@ -1,0 +1,58 @@
+body {
+    margin: 0;
+    padding: 0;
+  }
+
+.header {
+    padding: 25px;
+    background: #4e545a;
+    width: 100%;
+    color: white;
+    margin: 0 auto;
+    height: 100px;
+    position: relative;
+}
+
+
+.header .title {
+    margin-left: 20px;
+    font-weight: 800;
+    font-size: 35px;
+}
+
+.navbar {
+    display: inline-block;
+    color: white;
+    position: absolute; 
+    margin-left: 0;
+    justify-content: left !important;
+}
+
+.header .data {
+    margin-right: 25px;;
+    display: inline-block;
+    position: absolute; 
+    right: 0; 
+}
+
+.fade-in-animation {
+    -webkit-animation: fade-in 3s ease-out forwards;
+    animation: fade-in 3s ease-out forwards;
+}
+
+@-webkit-keyframes fade-in {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+@keyframes fade-in {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
