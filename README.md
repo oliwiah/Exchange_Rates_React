@@ -4,6 +4,8 @@ This project is an application showing current exchange rates table from [Nation
 
 The project has been bootstrapped with [Create React App](https://github.com/facebookincubator/create-react-app).
 
+After creating the project in **React**, I decided to rebuild it into **Redux** (which you can find [here](http://exchange-rates-redux.surge.sh/) which allowed me to reuse previously created components as well as catch the difference between those two libraries.
+
 ## Technologies used
 
 * ReactJS with React Router and Reactstrap (only for buttons)
