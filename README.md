@@ -11,6 +11,7 @@ After creating the project in **React**, I decided to rebuild it into **Redux** 
 * ReactJS with React Router and Reactstrap (only for buttons)
 * CSS
 * Ajax / Fetch API
+* Surge (for deploying the app)
 
 ## Functionality
 
